@@ -16,8 +16,8 @@ sed -i '/exec zsh -l/d' /tmp/ohmyzsh.sh
 sh -c "$(cat /tmp/ohmyzsh.sh)"
 
 # 安装oh-my-zsh插件
-cp -a $PWD/plugins/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
-cp -a $PWD/plugins/zsh-syntax-highlighting ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+cp -a $PWD/plugins/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins
+cp -a $PWD/plugins/zsh-syntax-highlighting ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins
 sed -i 's/)$/ zsh-syntax-highlighting zsh-autosuggestions)/g' ~/.zshrc
 
 # 切换至zsh
